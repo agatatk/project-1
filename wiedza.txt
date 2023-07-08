@@ -1,0 +1,329 @@
+produkcja: SYdney -> Australia, SG -> Singapur, IE - Europa i NV -> Ameryka północna.
+
+
+Agata T.
+  2:34 PM
+Chłopaki wiem e jesteście zarobieni, ale mam tak :                           Dawid:    rtmp://ingest.tellyo.com/external plus stream key: rtmppushtrd47276512713f (edited) 
+2:34
+Radek : rtmp://ingest.tellyo.com/external (edited) 
+2:35
+Stream key : 070121testowyrtmppushd31aed7f
+
+
+Agata T.
+  11:18 AM
+tak na szybko:
+Stream Now
+status live jak jest live
+status warning jak konto jest nieaktywne (? i.e. jak token jest wygaśnięty) - teraz wyszarzamy takie konta
+Edytor
+status warning jak konto jest nieaktywne (? i.e. jak token jest wygaśnięty) - teraz wyszarzamy takie konta
+status info jak są zmienione szczegóły posta (override settings - to, o czym wczoraj rozmawialiśmy)
+status success jak uda się opublikować
+status danger jak nie uda się opublikować
+Publish queue
+status success jak uda się opublikować
+status danger jak nie uda się opublikować
+Ruleset
+status warning jak konto jest nieaktywne (? i.e. jak token jest wygaśnięty) - teraz wyszarzamy takie konta
+
+
+Agata T.
+  9:48 AM
+mam zapisane:
+jak tworze kanal to jest dopuszczalne 200 znakow i po prostu dalej nie moge wpisywac, ale nie swieci mi sie ramka na czerwono, ani nie ma zadnego info o co chodzi, edycja inline pozwala na max 100 znakow
+w folderach jest dopuszcalne 200 znakow i moge ich wpisac wiecej, ale swieci sie czerwona ramka, natomiast przy edycji nazwy folderow na liscie folderow nic sie nie swieci po prostu jest zablokowane dalsze wpisywanie
+
+
+Agata T.
+  12:15 PM
+
+
+Agata T.
+  12:24 PM
+
+
+Agata T.
+  1:10 PM
+
+
+Agata T.
+  1:21 PM
+1:24
+
+
+Agata T.
+  3:35 PM
+IOS zdjęcia
+3:35
+3:36
+Android zdjęcia
+3:37
+
+
+Agata T.
+  7:59 AM
+https://tellyo.atlassian.net/browse/TRD-9446
+
+TRD-9446 Extend raw archive of streams on ingests to 7 days
+Status: Released
+Type: Zadanie
+Assignee: Jerzy Wiśniewski
+Priority: Medium
+More actions...
+Added by Jira Cloud
+8:01
+8:01
+
+
+Agata T.
+  12:54 PM
+rtmp://3.248.231.23/external
+12:54
+image.png
+ 
+image.png
+
+
+
+
+Agata T.
+  9:25 AM
+load balancer to znaczy, że mamy dwa ingesty, na które można nadawać, kiedy się psuje sygnał
+[9:23 AM] Tak jak na YT są dwa URL: jeden główny i ten drugi backupowy
+[9:24 AM] I jak sygnał przestaje przychodzić na URL główny to wówczas przełączene jest nagrywanie i stream pobierany jest z backupowego
+
+
+Agata T.
+  12:08 PM
+image.png
+ 
+image.png
+
+
+12:12
+image.png
+ 
+image.png
+
+
+
+
+Agata T.
+  8:39 AM
+Propertisy klipu/video/obrazka przypisywane są na płasko do klipu w momecie jego tworzenia - czyli publikowania do folderów
+Custome - są do dowlne ustawienia, jakie może sobie użytkownik ogarnać, ALE kiedy robisz upload dowolnego obiekty (video/obrazek/gif) wówczas możesz sobie zostawić domyślne ustawienia (załączony obrazek "edit propertis podczas uploadu)
+Te domyślne ustawienia też mają wpisane Custome - bo to jest nasz taki default
+Na swoim filmie nagrałaś sytuację, w której wchodzisz w edycję właściwości elementu.
+Pokazujemy CUSTOME bo w czasie tworzenia tego elementu nigdy nie zapisujemy nazwy rulesetu na bazie którego się ten zestaw stworzył, a druga (zdecydowanie ważniejsza rzecz jest taka, że edycja rulesetu nie zmienia właściwości już istniejacych klipów)
+Następnie zmieniasz te właściwości, żeby zostały zaciągnięte z AKTUALNYCH WERSJI RULESETÓW
+i przywracasz CUSTOME, ale ten CUSTOME to są domyślne wartości, a nie te, które były przy klipie.
+Jeśli nie chcesz zmieniać tych właściwości na formularzu edycji naciskasz CANCEL :slightly_smiling_face:
+image.png
+8:40
+To mam jeszcze pytanie z innej beczki... Dlaczego jak klikam Guide to raz otwiera mi się żadając ponownego zalogowania, a raz od razu?
+1 reply
+Ewa
+  [8:38 AM]
+Bo guide jest na produkcji. Tam musisz się zalogować. Po jednokrotnym logowaniu w LocalStorage trzymane są dane sesji i nawet, jak już zamkniesz kartę to nadal masz aktywny token do produkcji
+
+
+Agata T.
+  11:08 AM
+przypomniajac dla manual taggera mamy opcje dodawania tagow manualnie, usuwania, edycji i dodania do kompilacji
+11:09
+dla zewnetrznych zrodel tylko adjust i dodawanie do kompilacji, nie mozna nic usuwac, edytowac ani dodawac tagow manualnie (na to wlasnie ten fix idzie)
+
+
+Agata T.
+  2:01 PM
+Metadata:
+2:01
+eśli chodzi o opcję show in editor to tylko jeden może mieć tę flagę aktywną
+[1:55 PM] Czyli jeśli masz 15 wierszy to tylko jeden będzie z ptaszkiem
+[1:56 PM] Ale nie powinno tak znikać. Po usunięciu wybrany wiersz powinien zniknąć z listy
+Agata T.  [1:56 PM]
+a pojawianie się?
+[1:57 PM] dodawanie też nie działa poprawnie, nie pojawiają sie na liście zaraz po dodaniu  - drugi i kolejne
+Ewa  [1:57 PM]
+2.36
+[1:57 PM] Generalnie to jest tak
+[1:58 PM] że klient wie, jakie źródło tagów bedzie miał. Znowu taka opcja, jak u nas nie będzie raczej "prawdziwie produkcyjna".
+Klienci zwykle zaciągają taki z jednego źróła. W tym ID podaje się numer identyfikujący dane wydarzenie
+[1:58 PM] W tym widoku będzie w 99,9% jeden wpis :slightly_smiling_face:
+[1:59 PM] Niemniej jednak nie powinnno się to zachowywać w taki sposob - po dodaniu nowy wiersz powinien być widoczny. Po usunięciu wybrny wiersz powinien znikać z listy, a reszta być widoczna bez z
+
+
+Agata T.
+  10:32 AM
+ffmpeg -re -i https://tellyo-ndev-ie.s3-eu-west-1.amazonaws.com/sample_video/cbcdemo.ts -map 0:v:0 -c:v copy -map 0:a:0 -c:a copy -map_metadata -1 -f flv rtmp://ingest.tellyo.com/external/(podmienic na dane z channel settings)
+10:32
+to do wklejania w iwersz poleceń
+10:33
+poszło...
+
+
+Agata T.
+  1:23 PM
+V*#35f88YYgzacCZV*# - hasło do produkcji (edited) 
+
+
+Agata T.
+  1:43 PM
+Ingests PROD (per region) ważne do testowania statystyk przy zmianie ingestów w OBS!
+NV: rtmp://aws-ingest-us-east-1-prod-6c94ce59b03fa085.elb.us-east-1.amazonaws.com/external
+IE: rtmp://aws-ingest-eu-west-1-prod-d0f4ebf97ede30da.elb.eu-west-1.amazonaws.com/external
+CA: rtmp://aws-ingest-us-west-1-prod-b1f60936156d5e95.elb.us-west-1.amazonaws.com/external
+SG: rtmp://aws-ingest-ap-southeast-1-prod-7875cf2fb1e3d718.elb.ap-southeast-1.amazonaws.com/external
+SY: rtmp://aws-ingest-ap-southeast-2-prod-b0a333fc1dbbd876.elb.ap-southeast-2.amazonaws.com/external (edited) 
+1:43
+timescaledb-server-prod-ca.aws-prod.intranet
+timescaledb-server-prod-nv.aws-prod.intranet
+timescaledb-server-prod-sg.aws-prod.intranet
+timescaledb-server-prod-sy.aws-prod.intranet
+timescaledb-server-prod.aws-prod.intranet              - ważne dane IP do bazy danych SQL w wierszu poleceń cmd, ostatni jest dla IE i tylko jeden jest ważny chociaż zmienia się ingest w OBS (edited) 
+
+
+Agata T.
+  2:20 PM
+IMG_20221018_142003.jpg
+ 
+IMG_20221018_142003.jpg
+
+
+
+
+Agata T.
+  2:49 PM
+IMG_0304
+ 
+IMG_0304
+
+
+
+
+Agata T.
+  9:57 AM
+jest kolejna sprawa w kontekśćie batchowego dodawania klipów do kompilacji z folderów. Kolejność udało się poprawić ale klient brnie dalej. Problem jest taki, że klipy dodają się od najnowszego do najstarszego, co w przypadku kompilacji sportowych (tutaj: darts) ma mało sensu bo potem i tak musi odwracać wszystko w edytorze. Padła propozycja takiego rozwiązania:
+zaznaczamy na dole pierwszy klip, jaki ma być dodany do kompilacji
+jedziemy na górę listy
+shift+click na ostatni klip, jaki ma być dodany do kompilacji
+klipy trafiają na listę w takiej kolejności, w jakiej był klik
+w tym przypadku od najstarszego do najnowszego bo lecieliśmy od dołu do góry
+powinno też działać w drugą stronę - zaznaczam na górze listy i potem shift+click na dół - dodają się od najnowszego do najstarszego
+
+
+Agata T.
+  4:54 PM
+Agata T.  [4:45 PM]
+Może już mi kiedyś tłumaczyłes, może nie, ale tak skromnie spytam, czy wytłumaczysz mi na czym polegają te STMy?
+Mateusz Motyka  [4:53 PM]
+to jest taka czesc infrastruktury odpowiedzialna miedzy innymi za renderowanie video
+
+
+Agata T.
+  5:00 PM
+[4:57 PM]
+to sa takie maszynki dzialajace w AWSie ktore maja odpowiednia moc obliczeniowa zeby np. posklejac video produkowane w edytorze
+[4:58 PM] kazda taka instancja jest tworzona na podstawie AMI - czyli takiego obrazu na podstawie ktorego zostanie uruchomiona
+Agata T.  [4:59 PM]
+im więcej piszesz, tym większe robię:flushed:
+Mateusz Motyka  [5:00 PM]
+jest tez mechanizm skalowania, ktory jest zrobiony po to, zeby nie trzeba bylo czekac bardzo dlugo az zrobi sie video
+5:01
+[5:00 PM]
+jest tez mechanizm skalowania, ktory jest zrobiony po to, zeby nie trzeba bylo czekac bardzo dlugo az zrobi sie video
+[5:00 PM] jak narobisz duzo klipow w edytorze to trafia do kolejki
+5:01
+jak ta kolejka bedzie zbyt dluga to uruchomi sie kolejna maszynka
+
+
+Agata T.
+  10:31 AM
+Cześć,
+        chcemy powiadomić Cię o zmianie w usługach YouTube API.
+        Aby zapewnić bezpieczeństwo w YouTube, ograniczamy liczbę filmów, które kanał może przesłać w ciągu 24 godzin za pomocą interfejsu YouTube Data API. W związku z tą zmianą przesyłanie filmów przy użyciu YouTube Data API będzie objęte takimi samymi limitami jak przesyłanie z komputera czy urządzeń mobilnych.
+        Jeżeli podczas próby przesłania treści za pomocą YouTube Data API zobaczysz błąd 400 z wyjaśnieniem „uploadLimitExceeded”, spróbuj jeszcze raz po 24 godzinach. Pamiętaj:
+   W zależności od lokalizacji twórcy jego kanał może zwiększyć dzienny limit przesyłania przez uzyskanie dostępu do funkcji zaawansowanych. Więcej informacji znajdziesz w tym artykule.
+Wysokość limitu różni się w zależności od kraju lub regionu i historii kanału. Ostrzeżenia o naruszeniu praw autorskich mogą wpływać na ocenę historii kanału. Z kolei ostrzeżenia o naruszeniu wytycznych dla społeczności wpływają na to, ile treści kanał może przesłać.
+
+support.google.comsupport.google.com
+Common uploading errors - YouTube Help
+If you’re having problems uploading your video, select the error message you're seeing and follow the troubleshooting steps to solve your issue.
+
+support.google.comsupport.google.com
+Access to YouTube tools and features - YouTube Help
+The following Help Center article covers an update visible to a subset of creators. We're testing out additional eligibility criteria for certain features to reduce abuse. If you're part of this up
+
+
+Agata T.
+  9:54 AM
+Dla wyjaśnienia: Bitrate to termin techniczny, który wskazuje, ile danych jest zapisywanych, a następnie odczytywanych przy odtwarzaniu na sekundę (bit/s).
+Czyli im wyższy bitrate, tym więcej danych, tym większy plik
+
+
+Agata T.
+  8:58 AM
+[8:55 AM]
+No tak.
+Wszystko się zgadza.
+[8:55 AM] Teraz na przykładzie tym, który załączyłaś
+Agata T.  [8:55 AM]
+acha, czyli zapisują się media z mojego nowego wybranego rulesetu po kilknięciu Save\\
+Ewa  [8:56 AM]
+Wybrałaś, jako zestaw reguł ruleset ATNewWork1, który w tym momencie ma przypisane 2 konta FB
+Agata T.  [8:56 AM]
+tak (edited)
+Ewa  [8:56 AM]
+zapisujesz sobie, że teraz właściwości klipu będą bazowały na tym rulesecie
+[8:57 AM] Następnie, wchodzi jakiś administrator i mowi, że od teraz poprzez ten ruleset nie będzie już można publikować do FB i wyłącza FB w rulesecie
+[8:57 AM] A Ty wchodzisz we właściwości klipu i nadal masz widzieć te dwa konta
+
+
+Agata T.
+  11:14 AM
+image.png
+ 
+image.png
+
+
+
+
+Agata T.
+  4:03 PM
+2325
+[3:49 PM] jeśli w 25 fps
+[3:50 PM] bo fps to znaczy ile klatek (zdjęć) pokazywanych jest w 1 sekundzie
+[3:50 PM] im więcej FPSów tym płynniejsze wideo
+[3:50 PM] no i liczysz liczba sek * liczba klatek
+
+
+
+
+
+4:03
+to bierze fpsy z niższa liczbą klatek i doskalowuje
+[3:51 PM] No nie
+[3:51 PM] max fpsów to jest 60
+[3:52 PM] i wówczas jest tak, że render robi z obu klipów takie o niższej liczbie klatek
+[3:52 PM] bo w wyniku kompilacji to się klatki zrównują
+
+
+
+
+
+
+
+
+
+
+
+Jot something down
+
+
+
+
+
+
+
+
